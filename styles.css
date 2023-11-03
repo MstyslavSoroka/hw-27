@@ -1,0 +1,48 @@
+ul, a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.menu-open {
+    transform: rotate(90deg);
+    background-color: gray;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+}
+.menu-open-div {
+    margin-top: 300px;
+    margin-left: 37px;
+}
+
+.list-item {
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+.list-item>a:hover {
+   color: rgb(255, 118, 20);
+}
+.menu {
+    display: flex;
+    position: absolute;
+    background-color: grey;
+    border: none;
+    height: 100vh;
+    width: 240px;
+    font-size: 24px;
+    left: -200px;
+}
+.menu:hover {
+    left: 0;
+    transition: left 0.5s; 
+}
+
+.menu:hover .menu-open {
+   opacity: 0;
+   transition: opacity 0.5s ease-in-out;
+}
+.list {
+    margin-top: 100px;
+}
